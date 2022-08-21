@@ -1,3 +1,3 @@
-web: gunicorn doctor-appointment-booking-sys.wsgi --log-file - --log-level debug
+web: gunicorn andromeda.wsgi --log-file - --log-level debug
 python manage.py collectstatic --noinput
 manage.py migrate
